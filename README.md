@@ -1,4 +1,4 @@
 
-npm install \n
-npm run dev  \n
+npm install <br>
+npm run dev  <br>
 http://localhost:3333
