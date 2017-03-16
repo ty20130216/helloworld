@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Index = React.createClass({
+const Summary = React.createClass({
   render() {
     return (
     	<div className="container body">
@@ -14,4 +14,4 @@ const Index = React.createClass({
 	}
 });
 
-module.exports = Index;
+module.exports = Summary;

@@ -46,7 +46,7 @@ const Login = React.createClass({
 		router: React.PropTypes.object
 	},
 	loginSubmit() {
-		this.context.router.push('/index'); 
+		this.context.router.push('/summary'); 
 	},
 	componentDidMount() {
 		sessionStorage.removeItem('name')
