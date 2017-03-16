@@ -1,17 +1,12 @@
-import React from 'react';
+import React, {Component,PropTypes} from 'react';
+import {render} from 'react-dom';
 
-const Summary = React.createClass({
+export default class Summary extends React.Component{
   render() {
     return (
-    	<div className="container body">
+    	<div>
 			   Welcome [Name], we have put your email ([Email]) on record. The weather in [City] is currently [Weather]
 		  </div>
     );
-  },
-	componentDidMount() {
-		$('body').attr('class', 'nav-md')
-		$('.right_col').css('min-height', $(window).height())
-	}
-});
-
-module.exports = Summary;
+  }
+}
