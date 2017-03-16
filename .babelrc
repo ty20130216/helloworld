@@ -1,8 +1,8 @@
 {
     "presets": [
-        "latest", "react", {
-            "ignore": ["/node_modules"]
-        }
+        ["es2015",{ "modules": false }],
+        ["react"],
+        ["stage-1"]
     ],
-    "plugins": []
+    "plugins": ["transform-decorators-legacy","react-hot-loader/babel"]
 }
