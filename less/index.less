@@ -1,0 +1,80 @@
+@import "./variables";
+@import "./common";
+
+body {
+  //font-family: Arial, 'Microsoft YaHei', Helvetica, serif;
+  color: @theme-dark;
+  font-size: 14px;
+}
+
+.text-blue {
+  color: @theme-blue !important;
+}
+
+.text-orange {
+  color: @theme-orange !important;
+}
+
+.text-dark {
+  color: @theme-dark !important;
+}
+
+.text-gray {
+  color: #a6a6a6 !important;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.header{background: #f5f9f0;}
+.nav{background: #d8dcff;width:30%;}
+.article{background: #c5e9f4;width:70%;}
+.footer{background:#f5f9f0;}
+.rapper{text-align:center;line-height:2;}
+
+
+/* 電腦版 */
+
+.rapper{
+  max-width:960px;
+  overflow:hidden;
+  margin:0 auto;
+
+}
+
+.nav{
+  float:left;
+  height:300px;
+}
+
+.article{
+  float:left;
+  height:300px;
+
+}
+
+
+/* 平版 */
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .nav{
+    float:right;
+  }
+
+}
+
+/* 手機版 */
+
+@media only screen  and (max-width:480px) {
+  .nav{
+    float:none;
+    width:100%;
+    height:auto;
+  }
+  .article{
+    float:none;
+    width:100%;
+  }
+
+}

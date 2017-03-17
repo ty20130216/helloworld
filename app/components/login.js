@@ -53,7 +53,7 @@ export default class Login extends React.Component{
 
     render() {
         return (
-            <div >
+            <div className="article">
                 <div>Name <input name="name" onChange={e => this.handleChange(["name"],e)} value={this.props.name}/><span className="error-msg">{this.state.errMsgs["name"]}</span></div>
                 <div>Email <input name="email" onChange={e => this.handleChange(["email"],e)} value={this.props.email}/><span className="error-msg">{this.state.errMsgs["email"]}</span></div>
                 <div>City <input name="city" onChange={e => this.handleChange(["city"],e)} value={this.props.city}/><span className="error-msg">{this.state.errMsgs["city"]}</span></div>

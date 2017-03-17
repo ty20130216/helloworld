@@ -4,7 +4,8 @@ import { createStore,bindActionCreators } from 'redux';
 import { Provider ,connect} from 'react-redux';
 import * as actions from '../actions/loginAction';
 import reducers from '../reducers/loginReducer';
-import Summary from '../components/summary'
+import Summary from '../components/summary';
+import Silder from '../components/silder';
 
 class SummaryRoute extends React.Component{
 
@@ -16,7 +17,8 @@ class SummaryRoute extends React.Component{
         const { actions, name,email,city,weather} = this.props;
         return (
             <div>
-                <div>
+                <div className="rapper">
+                    <Silder/>
                     <Summary actions={actions} name={name} email={email} city={city} weather={weather}/>
                 </div>
             </div>
