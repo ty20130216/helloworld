@@ -1,12 +1,19 @@
 import React, {Component,PropTypes} from 'react';
 import {render} from 'react-dom';
 
+
 export default class Summary extends React.Component{
-  render() {
-    return (
-    	<div>
-			   Welcome [Name], we have put your email ([Email]) on record. The weather in [City] is currently [Weather]
-		  </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+    }
+
+   
+    render() {
+        return (
+            <div >
+                <div>Welcome [{this.props.name}], we have put your email ([{this.props.email}]) on record.</div>
+                <div>The weather in [{this.props.city}] is currently [{this.props.weather}]</div>
+            </div>
+        )
+    }
 }

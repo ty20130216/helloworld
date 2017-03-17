@@ -1,9 +1,13 @@
-import Component  from 'react';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom'
 import AppRouter from './router';
-import {createStore, applyMiddleware ,compose} from 'redux';
-import { Provider } from 'react-redux';
+import {createStore, applyMiddleware ,compose,combineReducers} from 'redux';
+import { Provider } from 'react-redux'
+import { Router, Route } from 'react-router'
+
 import reducers from '../reducers/loginReducer';
 
+//store
 let store = createStore(reducers, undefined, compose(
         applyMiddleware(
         ),
@@ -18,6 +22,7 @@ if (module.hot) {
 }
 
 export default class App extends Component {
+
     constructor(props) {
         super(props);
     }

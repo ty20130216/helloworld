@@ -3,12 +3,16 @@ import {render} from 'react-dom';
 import { createStore,bindActionCreators } from 'redux';
 import { Provider ,connect} from 'react-redux';
 import * as actions from '../actions/loginAction';
+import reducers from '../reducers/loginReducer';
 import Login from '../components/login'
 
+
 class LoginRoute extends React.Component{
+
     constructor(props) {
         super(props);
     }
+
     render() {
         const { actions, name,email,city} = this.props;
         return (
@@ -26,9 +30,10 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch){
     return{
         actions: bindActionCreators({
-        
+            setData:actions.setData
         }, dispatch)
     }
 }
 
 export default connect(mapStateToProps,mapDispatchToProps)(LoginRoute)
+

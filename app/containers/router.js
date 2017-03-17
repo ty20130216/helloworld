@@ -6,11 +6,14 @@ import SummaryRoute from '../routers/summaryRoute';
 
 
 export default class AppRouter extends Component {
+
     constructor(props) {
         super(props);
+
         this.history = new History();
     }
-
+    static defaultProps = {};
+    
     render() {
         return (
             <div>
@@ -22,4 +25,5 @@ export default class AppRouter extends Component {
             </div>
         );
     }
+
 }

@@ -2,7 +2,7 @@
   "name": "React_Helloworld_exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "app/index.js",
+  "main": "app/index.jsx",
   "author": "zxh",
   "keywords": [
     "react+redux+es6",
